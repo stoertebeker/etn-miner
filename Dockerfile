@@ -12,4 +12,4 @@ RUN apk --no-cache upgrade \
     && apk del build-base cmake git
 USER xminer
 WORKDIR /xmrig
-ENTRYPOINT ["./xmrig", "--algo=cryptonight", "--url=stratum+tcp://pool.etn.spacepools.org:3333,5555", "--user=etnk8yn45TddVHDbt9fZGWahcK8n18Lsr82CAbWjCrFiXPzNS4hchcoEFnEYbnSgnRRBtiyhP4DSSFDLSkkGQ4er5J1pyBWbCr@rincewind", "--pass=", "--threads=4", "--max-cpu-usage=100"]
+ENTRYPOINT ["./xmrig", "--algo=cryptonight", "--url=stratum+tcp://pool.etn.spacepools.org:3333,5555", "--user=etnk8yn45TddVHDbt9fZGWahcK8n18Lsr82CAbWjCrFiXPzNS4hchcoEFnEYbnSgnRRBtiyhP4DSSFDLSkkGQ4er5J1pyBWbCr@hostname", "--pass=", "--threads=4", "--max-cpu-usage=100"]
